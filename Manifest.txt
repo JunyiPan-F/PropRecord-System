@@ -1,2 +1,2 @@
-Main-class: jup324
+Main-class: main
 Class-Path: ojdbc11.jar

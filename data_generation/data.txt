@@ -1,0 +1,250 @@
+-- Insert sample property names and addresses into the table
+INSERT INTO property VALUES ('Southside', '444 Brodhead Avenue, Bethlehem, PA 18015');
+INSERT INTO property VALUES ('5x10', '456 Elm St, Apt 202, Los Angeles, California, 90001');
+INSERT INTO property VALUES ('Parkview Apartments', '789 Oak St, Apt 303, Chicago, Illinois, 60601');
+INSERT INTO property VALUES ('Sunny Lane', '1011 Pine St, Apt 404, Houston, Texas, 77001');
+INSERT INTO property VALUES ('Hillcrest Residences', '1515 Maple St, Apt 505, Miami, Florida, 33101');
+INSERT INTO property VALUES ('Lakeview Towers', '2020 Cedar St, Apt 606, Phoenix, Arizona, 85001');
+INSERT INTO property VALUES ('Green Meadows', '3030 Birch St, Apt 707, Denver, Colorado, 80201');
+INSERT INTO property VALUES ('Sayre House', '4040 Willow St, Apt 808, Seattle, Washington, 98101');
+INSERT INTO property VALUES ('HST', '5050 Redwood St, Apt 909, Boston, Massachusetts, 02101');
+INSERT INTO property VALUES ('Pinecrest Villas', '6060 Fir St, Apt 1010, Atlanta, Georgia, 30301');
+
+
+INSERT INTO apartment VALUES ('A101', 800, 2, 1, 1200.0, 'Southside');
+INSERT INTO apartment VALUES ('B202', 750, 1, 1, 1100, 'Southside');
+INSERT INTO apartment VALUES ('C303', 950, 3, 2, 1500, 'Southside');
+INSERT INTO apartment VALUES ('D505', 1100, 2, 2, 1400, 'Southside');
+INSERT INTO apartment VALUES ('C830', 1050, 3, 2, 1550, 'Southside');
+INSERT INTO apartment VALUES ('A332', 1200, 3, 2, 1600, '5x10');
+INSERT INTO apartment VALUES ('C839', 700, 1, 1, 1000, '5x10');
+INSERT INTO apartment VALUES ('B721', 850, 2, 1, 1300, '5x10');
+INSERT INTO apartment VALUES ('A332', 1200, 3, 2, 1600, '5x10');
+INSERT INTO apartment VALUES ('D409', 1000, 2, 2, 1400, 'Parkview Apartments');
+INSERT INTO apartment VALUES ('A212', 900, 2, 1, 1250, 'Sunny Lane');
+INSERT INTO apartment VALUES ('C607', 1050, 3, 2, 1550, 'Sunny Lane');
+INSERT INTO apartment VALUES ('B118', 800, 2, 1, 1200, 'Hillcrest Residences');
+INSERT INTO apartment VALUES ('A919', 750, 1, 1, 1100 , 'Lakeview Towers');
+INSERT INTO apartment VALUES ('D515', 950, 3, 2, 1500 , 'Green Meadows');
+INSERT INTO apartment VALUES ('C412', 1100, 2, 2, 1400 , 'Sayre House');
+INSERT INTO apartment VALUES ('A621', 1200, 3, 2, 1600 , 'Sayre House');
+INSERT INTO apartment VALUES ('C823', 700, 1, 1, 1000 , 'Sayre House');
+INSERT INTO apartment VALUES ('B324', 850, 2, 1, 1300, 'Sayre House');
+INSERT INTO apartment VALUES ('A731', 1000, 2, 2, 1400, 'Sayre House');
+INSERT INTO apartment VALUES ('D241', 900, 2, 1, 1250, 'Sayre House');
+INSERT INTO apartment VALUES ('C504', 1050, 3, 2, 1550, 'Sayre House');
+INSERT INTO apartment VALUES ('B622', 800, 2, 1, 1200, 'Sayre House');
+INSERT INTO apartment VALUES ('A415', 750, 1, 1, 1100 , 'HST');
+INSERT INTO apartment VALUES ('C728', 1100, 2, 2, 1400 , 'HST');
+INSERT INTO apartment VALUES ('D903', 950, 3, 2, 1500 , 'HST');
+INSERT INTO apartment VALUES ('A533', 1200, 3, 2, 1600 , 'HST');
+INSERT INTO apartment VALUES ('C216', 700, 1, 1, 1000, 'HST');
+INSERT INTO apartment VALUES ('B327', 850, 2, 1, 1300 , 'Pinecrest Villas');
+INSERT INTO apartment VALUES ('A729', 1000, 2, 2, 1400 , 'Pinecrest Villas');
+INSERT INTO apartment VALUES ('D629', 900, 2, 1, 1250 , 'Pinecrest Villas');
+
+
+-- Insert sample data into the "Prospecting_Tenants" table with hardcoded values
+INSERT INTO Prospecting_Tenants VALUES ('T00000001', 'Junyi Pan', '6107515390', 'junyipan12@gamil.com', TO_DATE('2023-10-15', 'YYYY-MM-DD'), 'A101'); 
+INSERT INTO Prospecting_Tenants VALUES ('T00000002', 'Yinuo Xu', '4847613990', 'ixyn398@gmail.com', TO_DATE('2023-10-16', 'YYYY-MM-DD'), 'B202');
+INSERT INTO Prospecting_Tenants VALUES ('T00000003', 'Jouny Zedan', '8149154042', 'jounyzedan@gamil.com', TO_DATE('2023-10-30', 'YYYY-MM-DD'), 'A621');
+INSERT INTO Prospecting_Tenants VALUES ('T00000004', 'David Cueva', '6176243605', 'david.cueva@gamil.com', TO_DATE('2023-10-30', 'YYYY-MM-DD'), 'A621');
+INSERT INTO Prospecting_Tenants VALUES ('T00000005', 'Angela Cui', '7635985084', 'angela.cui@gamil.com', TO_DATE('2023-10-31', 'YYYY-MM-DD'), 'C823');
+INSERT INTO Prospecting_Tenants VALUES ('T00000006', 'Tolga Daim', '5396252939', 'tolga.daim@gamil.com', TO_DATE('2023-11-01', 'YYYY-MM-DD'), 'B324');
+INSERT INTO Prospecting_Tenants VALUES ('T00000007', 'Daniel DeMasi', '9589765157', 'daniel.demasi@gamil.com', TO_DATE('2023-11-02', 'YYYY-MM-DD'), 'A731');
+
+-- Insert sample data into the "Tenants" table with hardcoded values
+
+INSERT INTO Tenant VALUES ('T00000001', 'Junyi','Pan', '6107515390', 'junyipan12@gamil.com'); 
+INSERT INTO Tenant VALUES ('T00000002', 'Yinuo','Xu', '4847613990', 'ixyn398@gmail.com');
+INSERT INTO Tenant VALUES ('T00000003', 'Jouny','Zedan', '8149154042', 'jounyzedan@gamil.com');
+INSERT INTO Tenant VALUES ('T00000004', 'David','Cueva', '6176243605', 'david.cueva@gamil.com');
+INSERT INTO Tenant VALUES ('T00000005', 'Angela','Cui', '7635985084', 'angela.cui@gamil.com');
+INSERT INTO Tenant VALUES ('T00000006', 'Tolga','Daim', '5396252939', 'tolga.daim@gamil.com');
+INSERT INTO Tenant VALUES ('T00000007', 'Daniel','DeMasi', '9589765157', 'daniel.demasi@gamil.com');
+INSERT INTO Tenant VALUES ('T00000008', 'Michael','Dominguez', '7182825914', 'michael.dominguez@examplecorp.com');
+INSERT INTO Tenant VALUES ('T00000009', 'Mitchell','Dorward', '7023652024', 'mitchell.dorward@consultinggroup.net');
+INSERT INTO Tenant VALUES ('T00000010', 'Kevin','Dotel','8152079228', 'kevin.dotel@financialservices.org');
+INSERT INTO Tenant VALUES ('T00000011', 'Kaushik','Duvur', '8827433674', 'kaushik.duvur@professionaladvisors.info');
+INSERT INTO Tenant VALUES ('T00000012', 'Anisha','Gademsky', '2246949563', 'anisha.gademsky@lawfirm.co.uk');
+INSERT INTO Tenant VALUES ('T00000013', 'Amelia','Gankhuyag', '2917437697', 'amelia.gankhuyag@healthcare.org');
+INSERT INTO Tenant VALUES ('T00000014', 'Anthony','Gatti', '3403130463', 'anthony.gatti@investmentbanking.org');
+INSERT INTO Tenant VALUES ('T00000015', 'Michael','Goldfarb', '6872481855', 'michael.goldfarb@university.edu');
+INSERT INTO Tenant VALUES ('T00000016', 'Olivia','Grimes', '8739792633', 'olivia.grimes@foundation.tech');
+INSERT INTO Tenant VALUES ('T00000017', 'Juhi','Grover', '6874207233', 'juhi.grover@gmail.com');
+INSERT INTO Tenant VALUES ('T00000018', 'Joyce','Guo', '3744237804', 'joyce.guo@gmail.com');
+INSERT INTO Tenant VALUES ('T00000019', 'Andrew','Pearce', '6390836284', 'anp225@lehigh.edu');
+
+
+-- insert to roommate
+INSERT INTO Roommate (ID, Tenant_Id) VALUES ('T00000002', 'T00000019');
+INSERT INTO Roommate (ID, Tenant_Id) VALUES ('T00000001', 'T00000003');
+INSERT INTO Roommate (ID, Tenant_Id) VALUES ('T00000005', 'T00000011');
+INSERT INTO Roommate (ID, Tenant_Id) VALUES ('T00000011', 'T00000005');
+INSERT INTO Roommate (ID, Tenant_Id) VALUES ('T00000019', 'T00000002');
+INSERT INTO Roommate (ID, Tenant_Id) VALUES ('T00000003', 'T00000001');
+
+--insert to pet
+INSERT INTO Pet (pet_id, Tenant_Id) VALUES ('P001', 'T00000001');
+INSERT INTO Pet (pet_id, Tenant_Id) VALUES ('P002', 'T00000002');
+INSERT INTO Pet (pet_id, Tenant_Id) VALUES ('P003', 'T00000011');
+INSERT INTO Pet (pet_id, Tenant_Id) VALUES ('P004', 'T00000013');
+
+
+
+-- Inserting data into the Amenity table
+INSERT INTO Amenity (Cost, Name) VALUES (10, 'Swimming Pool');
+INSERT INTO Amenity (Cost, Name) VALUES (5.0, 'Gym');
+INSERT INTO Amenity (Cost, Name) VALUES (2.0, 'Tennis Court');
+INSERT INTO Amenity (Cost, Name) VALUES (30, 'Parking Lot');
+INSERT INTO Amenity (Cost, Name) VALUES (15, 'Dog Park');
+INSERT INTO Amenity (Cost, Name) VALUES (50, 'Spa');
+INSERT INTO Amenity (Cost, Name) VALUES (10, 'Study Room');
+INSERT INTO Amenity (Cost, Name) VALUES (5, 'Bar');
+
+INSERT INTO Amenity (Cost, Name) VALUES (20, 'in-Unit Washer and Dryer');
+INSERT INTO Amenity (Cost, Name) VALUES (30, 'Private Balcony');
+INSERT INTO Amenity (Cost, Name) VALUES (20, 'Dishwasher');
+INSERT INTO Amenity (Cost, Name) VALUES (40, 'TV');
+INSERT INTO Amenity (Cost, Name) VALUES (40, 'WIFI');
+
+-- insert private amenity
+-- Inserting data into the Private_Amenity table
+INSERT INTO Private_Amenity (Name) VALUES ('in-Unit Washer and Dryer');
+INSERT INTO Private_Amenity (Name) VALUES ('Private Balcony');
+INSERT INTO Private_Amenity (Name) VALUES ('Dishwasher');
+INSERT INTO Private_Amenity (Name) VALUES ('TV');
+INSERT INTO Private_Amenity (Name) VALUES ('WIFI');
+
+
+-- insert common amenity
+INSERT INTO Common_Amenity (Name) VALUES ('Swimming Pool');
+INSERT INTO Common_Amenity (Name) VALUES ('Gym');
+INSERT INTO Common_Amenity (Name) VALUES ('Tennis Court');
+INSERT INTO Common_Amenity (Name) VALUES ('Parking Lot');
+INSERT INTO Common_Amenity (Name) VALUES ('Dog Park');
+INSERT INTO Common_Amenity (Name) VALUES ('Spa');
+INSERT INTO Common_Amenity (Name) VALUES ('Study Room');
+INSERT INTO Common_Amenity (Name) VALUES ('Bar');
+
+-- Inserting data into apt_has_amenity
+-- all ss apt
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A101', 'in-Unit Washer and Dryer','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A101', 'Private Balcony','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A101', 'TV','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A101', 'WIFI','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A101', 'Dishwasher','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A101', 'in-Unit Washer and Dryer','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('B202', 'in-Unit Washer and Dryer','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('C303', 'in-Unit Washer and Dryer','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('D505', 'in-Unit Washer and Dryer','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('C830', 'Private Balcony','Southside');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('C830', 'in-Unit Washer and Dryer','Southside');
+-- all hst apt
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A415', 'TV','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A415', 'Private Balcony','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('C728', 'TV','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('C728', 'WIFI','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('D903', 'WIFI','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('D903', 'in-Unit Washer and Dryer','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A533', 'WIFI','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('A533', 'TV','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('C216', 'Private Balcony','HST');
+INSERT INTO apt_has_amenity (Apart_No, amenity_name,prop_name) VALUES ('C216', 'TV','HST');
+
+-- Inserting data into prop_has_amenity
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('HST', 'Parking Lot');
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('Sayre House', 'Swimming Pool');
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('Southside', 'Gym');
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('Southside', 'Dog Park');
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('Southside', 'Spa');
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('Southside', 'Study Room');
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('Southside', 'Parking Lot');
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('Southside', 'Swimming Pool');
+INSERT INTO prop_has_amenity (prop_name, amenity_name) VALUES ('Sunny Lane', 'Bar');
+
+
+-- Insert hardcoded data into the "Lease" table (30 rows)
+INSERT INTO Lease (ID, start_day, end_day, no_month, refund, amenity_cost, base_rent, deposit, Apart_No, Tenant_Id, prop_name)
+--INSERT INTO apartment VALUES ('A101', 800, 2, 1, 1200.0, 'Southside');
+--INSERT INTO apartment (Apart_No, room_size, bedroom_no, bathroom_no, rent, Name)
+VALUES ('L00000001', TO_DATE('2023-10-01', 'YYYY-MM-DD'), TO_DATE('2024-09-30', 'YYYY-MM-DD'), 12, 0, 277, 1200, 1200, 'A101', 'T00000001','Southside');
+INSERT INTO Lease (ID, start_day, end_day, no_month, refund, amenity_cost, base_rent, deposit, Apart_No, Tenant_Id, prop_name) VALUES ('L00000002', TO_DATE('2023-10-01', 'YYYY-MM-DD'), TO_DATE('2024-09-30', 'YYYY-MM-DD'), 12, 0, 277, 1200, 1200, 'A101', 'T00000003', 'Southside');
+INSERT INTO Lease (ID, start_day, end_day, no_month, refund, amenity_cost, base_rent, deposit, Apart_No, Tenant_Id, prop_name) VALUES  ('L00000003', TO_DATE('2023-10-15', 'YYYY-MM-DD'), TO_DATE('2024-09-14', 'YYYY-MM-DD'), 12, 0, 142, 1100, 1100, 'B202', 'T00000002', 'Southside');
+INSERT INTO Lease (ID, start_day, end_day, no_month, refund, amenity_cost, base_rent, deposit, Apart_No, Tenant_Id, prop_name) VALUES ('L00000004', TO_DATE('2023-10-15', 'YYYY-MM-DD'), TO_DATE('2024-09-14', 'YYYY-MM-DD'), 12, 0, 142, 1100, 1100, 'B202', 'T00000019', 'Southside');
+INSERT INTO Lease (ID, start_day, end_day, no_month, refund, amenity_cost, base_rent, deposit, Apart_No, Tenant_Id, prop_name) VALUES  ('L00000005', TO_DATE('2023-12-01', 'YYYY-MM-DD'), TO_DATE('2024-09-30', 'YYYY-MM-DD'), 10, 0, 172, 1550 , 1550, 'C830', 'T00000005', 'Southside');
+
+INSERT INTO Lease (ID, start_day, end_day, no_month, refund, amenity_cost, base_rent, deposit, Apart_No, Tenant_Id, prop_name) VALUES ('L00000006', TO_DATE('2023-12-15', 'YYYY-MM-DD'), TO_DATE('2024-09-14', 'YYYY-MM-DD'), 10, 0,30, 1600, 1600, 'A332', 'T00000006', 'HST');
+INSERT INTO Lease (ID, start_day, end_day, no_month, refund, amenity_cost, base_rent, deposit, Apart_No, Tenant_Id, prop_name) VALUES ('L00000007', TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 6, 0,30, 1000, 1000, 'C839', 'T00000007', 'HST');
+INSERT INTO Lease (ID, start_day, end_day, no_month, refund, amenity_cost, base_rent, deposit, Apart_No, Tenant_Id, prop_name) VALUES ('L00000008', TO_DATE('2024-01-15', 'YYYY-MM-DD'), TO_DATE('2024-12-14', 'YYYY-MM-DD'), 12, 0, 30, 1300, 1300, 'B721', 'T00000008', 'HST');
+
+
+-- insert data to Payment
+-- Inserting data into the Payment table
+-- total is wrong: amentities are now all monthly
+INSERT INTO Payment (ID, Total_rent, Method, Time, lease_id, tenant_id)
+VALUES ('P0000000001',17724, 'Credit Card', TO_TIMESTAMP('2023-10-21 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), 'L00000001', 'T00000001');
+
+INSERT INTO Payment (ID, Total_rent, Method, Time, lease_id, tenant_id)
+VALUES ('P0000000002',17724, 'Credit Card', TO_TIMESTAMP('2023-10-20 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), 'L00000002', 'T00000003');
+
+INSERT INTO Payment (ID, Total_rent, Method, Time, lease_id, tenant_id)
+VALUES ('P0000000003', 14904, 'Cash',TO_TIMESTAMP('2023-10-20 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), 'L00000003', 'T00000002');
+
+INSERT INTO Payment (ID, Total_rent, Method, Time, lease_id, tenant_id)
+VALUES ('P0000000004',14904, 'Cash',TO_TIMESTAMP('2023-10-20 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), 'L00000004', 'T00000019');
+
+INSERT INTO Payment (ID, Total_rent, Method, Time, lease_id, tenant_id)
+VALUES ('P0000000005', 20664, 'Third Party',TO_TIMESTAMP('2023-10-20 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), 'L00000005', 'T00000005');
+
+INSERT INTO Payment (ID, Total_rent, Method, Time, lease_id, tenant_id)
+VALUES ('P0000000006',19560, 'Third Party', TO_TIMESTAMP('2023-10-20 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), 'L00000006', 'T00000006');
+
+-- Inserting data into the Card table
+INSERT INTO Card (Payment_Id, Card_number)
+VALUES ('P0000000001', 1234567890123456);
+
+INSERT INTO Card (Payment_Id, Card_number)
+VALUES ('P0000000002', 9876543210987654);
+
+-- Inserting data into the Cash table
+INSERT INTO Cash (Payment_Id, Currency)
+VALUES ('P0000000003', 'CNY');
+
+INSERT INTO Cash (Payment_Id, Currency)
+VALUES ('P0000000004', 'EUR');
+
+-- Inserting data into the Third_Party table
+INSERT INTO Third_Party (Payment_Id, Party_name, Email)
+VALUES ('P0000000005', 'PayPal', 'angela.cui@gamil.com');
+
+INSERT INTO Third_Party (Payment_Id, Party_name, Email)
+VALUES ('P0000000006', 'Stripe', 'tolga.daim@gamil.com');
+
+
+ALTER TABLE Pet
+ADD CONSTRAINT SYS_C00645480
+FOREIGN KEY (TENANT_ID)
+REFERENCES tenant(ID);
+
+ALTER TABLE Pet
+ADD FOREIGN KEY (TENANT_ID) REFERENCES tenant(ID);
+
+ALTER TABLE lease
+add paid_amount NUMBER(6,1);
+
+ALTER TABLE lease
+add prop_name VARCHAR2(20 BYTE);
+
+ALTER TABLE prospecting_tenants
+add prop_name VARCHAR2(20 BYTE);
+
+ALTER TABLE prospecting_tenants
+ADD CONSTRAINT SYS_C00645486
+FOREIGN KEY (prop_name)
+REFERENCES property(name);
+
+ALTER TABLE prospecting_tenants
+add prop_name VARCHAR2(20 BYTE);
+VARCHAR2(20 BYTE)
+
